@@ -1,0 +1,93 @@
+.gemini-chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .chat-toggle {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #ffbb00;
+    color: black;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .chat-window {
+    width: 320px;
+    height: 420px;
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  .chat-header {
+    background-color: #292929;
+    padding: 14px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #444;
+  }
+  
+  .chat-body {
+    flex: 1;
+    padding: 12px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .chat-msg {
+    max-width: 80%;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .chat-msg.user {
+    background-color: #00b894;
+    align-self: flex-end;
+    color: black;
+  }
+  
+  .chat-msg.bot {
+    background-color: #6c5ce7;
+    align-self: flex-start;
+  }
+  
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #444;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .chat-input button {
+    background-color: #00b894;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  

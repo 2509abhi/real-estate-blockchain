@@ -130,8 +130,12 @@ const NFTMarketplace = () => {
   return (
     <div className="header-section text-white bg-dark">
     <div className="marketplace-container">
-      <h2>NFT Marketplace</h2>
-      <button className="connect-btn" onClick={connectWallet}>🔗 Connect Wallet</button>
+      
+      <button className="connect-btn" onClick={connectWallet}> <img
+              className="wallet-icon"
+              src="/MetaMask-icon-fox.svg"
+              alt="MetaMask"
+            /> Connect Wallet</button>
 
       <div className="wallet-info">
         <p><strong>Wallet Address:</strong> {userAddress || "Not Connected"}</p>

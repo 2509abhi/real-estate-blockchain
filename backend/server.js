@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-
+const geminiChatRoute = require("./routes/geminiChat");
 const app = express();
 const PORT = 5500;
 
@@ -18,6 +18,8 @@ const {
 // ✅ Middleware
 app.use(cors());
 app.use(express.json());
+// gemini
+app.use('/api', geminiChatRoute);
 
 // ✅ Fetch NFT Metadata
 app.get("/fetchNFT/:tokenId", async (req, res) => {

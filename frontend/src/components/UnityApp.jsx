@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
+import './UnityApp.css';
+
 
 const UnityApp = ({ unityConfig }) => {
   const containerRef = useRef(null);
@@ -99,20 +101,13 @@ const UnityApp = ({ unityConfig }) => {
       }}
     >
       {isLoading && (
-        <div style={{
-          position: 'absolute',
-          zIndex: 9999,
-          top: 0, left: 0, right: 0, bottom: 0,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          backgroundColor: 'rgba(0,0,0,0.5)'
-        }}>
-          <div style={{ color: '#fff', fontSize: '18px' }}>
-          Explore the future in 3D—where design meets reality... {progress}%
+        <div className="unity-loader">
+          <div className="unity-loader-text">
+            🚀 Explore the future in 3D... {progress}%
           </div>
         </div>
       )}
+
 
       <canvas
         id="unity-canvas"
@@ -125,8 +120,7 @@ const UnityApp = ({ unityConfig }) => {
 
       <div id="unity-warning" style={{ position: 'absolute', top: 0, left: 0, right: 0 }}></div>
       <div id="unity-footer" style={{ position: 'absolute', bottom: 0, left: 0, right: 0 }}>
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button" style={{ cursor: 'pointer' }}></div>
+        <div id="unity-fullscreen-button" style={{ cursor: 'pointer' }}>⛶</div>
         <div id="unity-build-title">{unityConfig?.productName || 'Apartment 1'}</div>
       </div>
     </div>

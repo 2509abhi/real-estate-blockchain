@@ -1,0 +1,56 @@
+.sell-house-form {
+    background-color: white;
+    color: #222;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    max-width: 500px;
+    margin: 40px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-family: var(--font-family);
+  }
+  
+  .sell-house-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+  }
+  
+  .sell-house-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: border 0.2s;
+  }
+  
+  .sell-house-form input:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
+  
+  .sell-house-form button {
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background var(--transition-speed);
+  }
+  
+  .sell-house-form button:hover {
+    background-color: #019370;
+  }
+  
+  @media (max-width: 600px) {
+    .sell-house-form {
+      margin: 20px;
+      padding: 20px;
+    }
+  }
+  

@@ -23,7 +23,7 @@ const ApartmentModal = ({ apartment, onClose }) => {
         </div>
 
         <div className="modal-section">
-          <BlockchainInterface apartmentId={apartment.id} />
+          {/* <BlockchainInterface apartmentId={apartment.id} /> */}
           <NFTMarketplace />
         </div>
       </div>
