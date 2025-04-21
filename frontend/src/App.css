@@ -1,0 +1,211 @@
+/* Import a modern font (optional) */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+/* CSS Variables for theme consistency */
+:root {
+  --primary-color: #222; /* For primary text */
+  --secondary-color: #00b894; /* Accent color for buttons */
+  --accent-color: #6c5ce7; /* Secondary accent for interactive elements */
+  --background-color: #f5f5f5; /* Overall background color */
+  --light-gray: #f9f9f9; /* For card backgrounds and boxes */
+  --border-radius: 8px;
+  --transition-speed: 0.3s;
+  --header-bg: linear-gradient(90deg, #4b79a1, #283e51);
+  --font-family: 'Roboto', sans-serif;
+}
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  padding: 20px;
+  text-align: center;
+  background: var(--header-bg);
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Main content container */
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Apartment Listing Grid for 3D Houses */
+.apartment-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+/* Apartment Card Styling */
+.apartment-card {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.apartment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Apartment Image */
+.apartment-card img {
+  width: 100%;
+  display: block;
+}
+
+/* Apartment Details */
+.apartment-card .details {
+  padding: 15px;
+}
+
+/* Modal Styling (e.g., for ApartmentModal) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: var(--border-radius);
+  width: 90%;
+  max-width: 600px;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* NFT Marketplace Component */
+.marketplace-container {
+  background: white;
+  padding: 20px;
+  margin: 40px auto;
+  max-width: 600px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.marketplace-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* Connect Wallet Button */
+.connect-btn {
+  background: var(--secondary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background var(--transition-speed);
+}
+
+.connect-btn:hover {
+  background: #019370;
+}
+
+/* Wallet Info */
+.wallet-info {
+  background: var(--light-gray);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* Form Section */
+.form-section label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button Group for NFT Actions */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button-group button {
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background var(--transition-speed);
+}
+
+.button-group button:hover {
+  background: #5b4ac2;
+}
+
+/* Status Box */
+.status-box {
+  background: var(--light-gray);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  min-height: 50px;
+  white-space: pre-wrap;
+  font-family: monospace;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+  .apartment-list {
+    grid-template-columns: 1fr;
+  }
+}

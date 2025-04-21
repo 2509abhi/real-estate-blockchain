@@ -1,0 +1,25 @@
+.header-section {
+    background: linear-gradient(135deg, #0d1117, #1c1f26);
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .nav-link {
+    color: #ccc !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffc107 !important;
+  }
+  
+  .btn-outline-warning {
+    border: 1px solid #ffc107;
+  }
+  
+  .btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: #000;
+  }
+  

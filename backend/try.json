@@ -1,0 +1,10 @@
+{
+    "name": "fking trying",
+    "description": "A high-end luxury apartment in downtown.",
+    "image": "ipfs://bafybeibskonr45i2nlanm42tihirtnyfqaeeyx4qisqo2i6pjhfcqan344", 
+    "attributes": [
+        { "trait_type": "Property Details", "value": "ipfs://bafkreiatqxtxgaqkz2y6hi2yimcrv5uzflqxkq7rqgfngivs674v3y2fb4" },
+        { "trait_type": "Registry", "value": "ipfs://bafkreigj7rkcbekyywsrblqsa64tucvz4szei5o2reifaeojnszjwvrhvi" },
+        { "trait_type": "Past Ownership", "value": "ipfs://bafkreig3iikv2ricb573pycredotnloeqe5t66qwna73gzglobyjlnlfwi" }
+    ]
+}

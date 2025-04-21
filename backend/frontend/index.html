@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.1.2/web3.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>NFT Marketplace</h1>
+        <button id="connectWallet">🔗 Connect Wallet</button>
+
+        <div id="walletInfo">
+            <p>Wallet Address: <span id="userWallet">Not Connected</span></p>
+        </div>
+
+        <div class="form">
+            <label for="tokenId">NFT Token ID:</label>
+            <input type="number" id="tokenId" placeholder="Enter Token ID" required>
+
+            <label for="price">Price (ETH) [For Listing & Buying]:</label>
+            <input type="number" id="price" placeholder="Enter Price in ETH">
+
+            <!-- Action Buttons -->
+            <button id="fetchMetadata">📜 Fetch Metadata</button>
+            <button id="listNFT">✅ List NFT</button>
+            <button id="delistNFT">❌ Delist NFT</button>
+            <button id="buyNFT">🛒 Buy NFT</button>
+            <button id="checkOwners">👥 Check Past Owners</button>
+            <button id="checkSale">🔍 Check If For Sale</button>
+        </div>
+
+        <div id="statusMessage"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

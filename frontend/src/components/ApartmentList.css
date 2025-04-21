@@ -1,0 +1,61 @@
+/* Global Theme Variables (Optional, can be defined in a separate file) */
+:root {
+    --primary-bg: #4b79a1;
+    --card-bg: #283e51;
+    --card-border:#283e51;
+    --card-hover-shadow: rgba(0, 0, 0, 0.2);
+    --header-bg: linear-gradient(90deg, #4b79a1, #283e51);
+    --header-color: #fff;
+    --transition-speed: 0.3s;
+  }
+  
+  /* Container for Apartment List */
+  .apartment-list-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--primary-bg);
+    padding: 20px;
+  }
+  
+  /* Individual Apartment Card */
+  .apartment-card {
+    border: 1px solid var(--card-border);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    background-color: var(--card-bg);
+    color: var(--card-bg);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  }
+  
+  .apartment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px var(--card-hover-shadow);
+  }
+  
+  /* Apartment Title */
+  .apartment-card h2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  /* Optional: Margin for Image Carousel Component */
+  .image-carousel {
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .apartment-list-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .apartment-card {
+      width: 90%;
+    }
+  }
+  

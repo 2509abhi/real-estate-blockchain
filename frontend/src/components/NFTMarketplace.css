@@ -1,0 +1,143 @@
+
+
+/* Marketplace Container */
+.marketplace-container {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #2a2a2a;  /* Slightly lighter dark background */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffc107;  /* Golden accent */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Connect Wallet Button */
+.connect-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #28a745;  /* Green button for connection */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.connect-btn:hover {
+  background-color: #218838;  /* Darker green for hover effect */
+}
+
+/* Wallet Info */
+.wallet-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wallet-info p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Form Section */
+.form-section {
+  background: #333;  /* Slightly dark background for input fields */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.form-section label {
+  display: block;
+  font-size: 1.1rem;
+  color: #f4f4f4;
+  margin-bottom: 10px;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background-color: #444;
+  color: #fff;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.form-section input:focus {
+  border-color: #ffc107;  /* Golden color on focus */
+  outline: none;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.button-group button {
+  padding: 12px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #555;  /* Muted background for buttons */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-group button:hover {
+  background-color: #ffc107;  /* Golden hover effect */
+  transform: translateY(-3px);  /* Slightly elevate on hover */
+}
+
+.button-group button:active {
+  background-color: #e0a800;  /* Darker gold when clicked */
+  transform: translateY(1px);  /* Button presses down when clicked */
+}
+
+/* Status Box */
+.status-box {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  color: #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin-top: 30px;
+  overflow-x: auto;
+}
+
+.status-box pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .form-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .button-group {
+    flex-direction: row;
+    gap: 15px;
+  }
+}

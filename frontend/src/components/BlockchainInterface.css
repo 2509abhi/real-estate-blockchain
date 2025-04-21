@@ -1,0 +1,95 @@
+.blockchain-interface {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blockchain-interface h3 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .wallet-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .wallet-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .wallet-btn.metamask {
+    background: #3d065f;
+    color: white;
+  }
+  
+  .wallet-btn.metamask:hover {
+    background: #150320;
+  }
+  
+  .wallet-btn.walletconnect {
+    background: #ffffff;
+    color: #150320;
+  }
+  
+  .wallet-btn.walletconnect:hover {
+    background: #0b2136;
+    color: white;
+  }
+  
+  .wallet-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  .connected-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .connected-info .wallet-logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+  
+  .purchase-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .purchase-btn:hover {
+    background: #45a049;
+  }
+  
+  .tx-status {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+  
